@@ -52,7 +52,6 @@ Task 1
 
 ### Instructions
 Open a browser and run http://localhost/index.php. You should see something like this in the screen:
-Please note that there is no css in the newly created page as it will use the current css theme in the Shopify store.
 
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im3.jpg)
 
@@ -78,6 +77,8 @@ Task 2
 
 ### Instructions
 Open a browser and run http://localhost/createpage.php. You should see something like this in the screen:
+Please note that there is no css in the newly created page as it will use the current css theme in the Shopify store.
+
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im7.jpg)
 
 It will do the following:
