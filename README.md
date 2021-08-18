@@ -28,7 +28,7 @@ Graphql does not seem to be working. I am getting an error when trying to run it
 Creating a new page using /api/2021-07/pages.json does not seem to be working as well. The API credential might not have a permission to create a new page.
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im10.jpg)
 
-For databse credential, I am using the one in \docker\secrets\mysql_xxx
+For databse credentials, I am using the one in \docker\secrets\mysql_xxx
 
 Setup
 --
