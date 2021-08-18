@@ -84,7 +84,7 @@ Please note that there is no css in the newly created page as it will use the cu
 It will do the following:
 1. Grab all collections from the database.
 2. Convert it into html page.
-3. Create a new landing page and send the coverted html to Shopify store via API with all the collections in the body as the content.
+3. Create a new landing page and send the converted html to Shopify store via API with all the collections in the body as the content.
 
 
 
