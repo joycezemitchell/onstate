@@ -1,0 +1,91 @@
+version: '3.6'
+
+services:
+  couchbase:
+    build:
+        context: ./couchbase
+    tty: true
+    ports:
+      - "4369:4369"
+      - "8091:8091"
+      - "8092:8092"
+      - "8093:8093"
+      - "8094:8094"
+      - "9100-9105:9100-9105"
+      - "9998:9998"
+      - "9999:9999"
+      - "11207:11207"
+      - "11209-11211:11209-11211"
+      - "11214:11214"
+      - "11215:11215"
+      - "18091-18093:18091-18093"
+      - "21100-21299:21100-21299"
+    volumes:
+      - couchbase:/opt/couchbase/var/lib/couchbase  
+    secrets:
+      - cb_admin_user
+      - cb_admin_pass
+      - cb_bucket_user
+      - cb_bucket_pass
+
+  mysql:
+    build:
+      context: ./mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql:/var/lib/mysql
+    secrets:
+      - mysql_root_pass
+      - mysql_database
+      - mysql_user
+      - mysql_pass
+    environment:
+      - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql_root_pass
+      - MYSQL_DATABASE_FILE=/run/secrets/mysql_database
+      - MYSQL_USER_FILE=/run/secrets/mysql_user
+      - MYSQL_PASSWORD_FILE=/run/secrets/mysql_pass
+
+  php:
+    build:
+        context: ./php
+    volumes:
+       - ./src/project/html:/var/www/html
+       - ./src/:/var/www/src
+    secrets:
+       - cb_bucket_user
+       - cb_bucket_pass
+       - mysql_user
+       - mysql_pass
+    
+  nginx:
+    build:
+        context: ./nginx
+    volumes:
+       - ./src/project/html:/var/www/html
+       - ./src/:/var/www/src
+    ports:
+      - "80:80"
+      - "443:443"
+
+secrets:
+  cb_admin_user:
+    file: ./docker/secrets/cb_admin_user
+  cb_admin_pass:
+    file: ./docker/secrets/cb_admin_pass
+  cb_bucket_user:
+    file: ./docker/secrets/cb_bucket_user
+  cb_bucket_pass:
+    file: ./docker/secrets/cb_bucket_pass
+  mysql_root_pass:
+    file: ./docker/secrets/mysql_root_pass
+  mysql_database:
+    file: ./docker/secrets/mysql_database
+  mysql_user:
+    file: ./docker/secrets/mysql_user
+  mysql_pass:
+    file: ./docker/secrets/mysql_pass
+
+volumes:
+  couchbase:
+  mysql:

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+###################################################
+
+###################################################
+
+set -e
+
+cb_bucket_user=`cat /run/secrets/cb_bucket_user`
+cb_bucket_pass=`cat /run/secrets/cb_bucket_pass`
+
