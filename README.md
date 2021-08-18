@@ -15,7 +15,7 @@ couchbase && \
 I am getting this error with the orignal Dockerfile
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im1.jpg)
 
-I have also add the following under docker-php-ext-install in PHP Docker file to be able to use MySqli for php database connection:
+I have also added the following under docker-php-ext-install in PHP Docker file to be able to use MySqli for php database connection:
 
 ```
 mysqli
