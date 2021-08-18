@@ -51,7 +51,7 @@ Task 1
 
 ### Instructions
 Open a browser and run http://localhost/index.php. You should see something like this in the screen:
-![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im3.jpg)
+![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im3.JPG)
 
 It will do the following:
 1. Create a database 3 tables(collections, products and orders)
@@ -61,7 +61,7 @@ It will do the following:
 
 Here are sample screenshots of the tables:
 
-![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im4.jpg)
+![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im4.JPG)
 
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im5.jpg)
 
@@ -74,7 +74,7 @@ Task 2
 
 
 ### Instructions
-Open a browser and run http://localhost/createpage.php . You should see something like this in the screen:
+Open a browser and run http://localhost/createpage.php. You should see something like this in the screen:
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im7.jpg)
 
 It will do the following:
@@ -83,8 +83,6 @@ It will do the following:
 3. Create a new landing page in Shopify store
 
 Here is a sample screenshot:
-
-![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im8.jpg)
 
 
 
