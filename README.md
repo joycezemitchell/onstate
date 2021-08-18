@@ -2,7 +2,7 @@ John Mitchell Villanueva - OnSite Exam
 ==
 
 
-Note
+Notes
 --
 I have updated php/Dockerfile and removed all the Couchbase related packages/libraries.
  ```
@@ -40,8 +40,9 @@ Setup
     ```
     
 3. After the build has finished, run
-
+    ```
     docker-compose up -d
+    ```
 
 Task 1
 --
