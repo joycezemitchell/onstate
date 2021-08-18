@@ -28,7 +28,7 @@ Graphql does not seem to be working. I am getting an error when trying to run it
 Creating a new page using /api/2021-07/pages.json does not seem to be working as well. The API credential might not have a permission to create a new page.
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im10.jpg)
 
-
+For databse credential, I am using the one in \docker\secrets\mysql_xxx
 
 Setup
 --
@@ -55,7 +55,7 @@ Open a browser and run http://localhost/index.php. You should see something like
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im3.jpg)
 
 It will do the following:
-1. Create a database 3 tables(collections, products and orders)
+1. Create a 3 database tables(collections, products and orders)
 2. Import all collections from Shopify store
 3. Import all products
 4. Import all orders
