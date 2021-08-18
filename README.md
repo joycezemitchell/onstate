@@ -33,13 +33,13 @@ For databse credentials, I am using the one in \docker\secrets\mysql_xxx
 Setup
 --
 
-1. Git clone this repo
-2. Run
+1. Git clone this repo.
+2. Run:
     ```
     docker-compose build
     ```
     
-3. After the build has finished, run
+3. After the build has finished, run:
     ```
     docker-compose up -d
     ```
@@ -55,10 +55,10 @@ Open a browser and run http://localhost/index.php. You should see something like
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im3.jpg)
 
 It will do the following:
-1. Create 3 database tables(collections, products and orders)
-2. Import all collections from Shopify store
-3. Import all products
-4. Import all orders
+1. Create 3 database tables(collections, products and orders).
+2. Import all collections from Shopify store.
+3. Import all products.
+4. Import all orders.
 
 Here are sample screenshots of the tables:
 
@@ -79,11 +79,9 @@ Open a browser and run http://localhost/createpage.php. You should see something
 ![Alt text](https://github.com/joycezemitchell/onstate/blob/master/images/im7.jpg)
 
 It will do the following:
-1. Grab all collections from the database
-2. Convert it into html page
-3. Create a new landing page in Shopify store
-
-Here is a sample screenshot:
+1. Grab all collections from the database.
+2. Convert it into html page.
+3. Create a new landing page in Shopify store with all the collections in the body as the content.
 
 
 
